@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="bg-[#141418] text-white" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lumo</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="group">
+    <div class="hidden" hidden>
+      <svg>
+        <symbol id="menu" fill="none" viewBox="0 0 27 18">
+          <path fill="#b29354" d="M0 17.567V15.9h26.667v1.667zm0-7.95V7.95h26.667v1.667zm0-7.95V0h26.667v1.667z"/>
+        </symbol>
+        <symbol id="leaf" fill="none" viewBox="0 0 43 39">
+          <path stroke="#d3b372" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.438 27.067a11.4 11.4 0 0 1-1.486-5.61c0-6.658 5.75-11.39 13.802-12.425C33.144 7.825 37.173 3.166 39.858.75c8.051 26.918-6.902 33.13-16.104 33.13a15 15 0 0 1-6.901-1.663"/>
+          <path stroke="#d3b372" stroke-linecap="round" stroke-width="1.5" d="M.75 38.021C1.9 31.809 6.405 27.95 16.853 25.597c7.4-1.665 12.568-5.839 16.103-10.239"/>
+        </symbol>
+        <symbol id="security" fill="none" viewBox="0 0 30 35">
+          <path fill="#d3b372" d="M12.5 18.238 9.262 15 7.5 16.762l5 5 10-10L20.738 10z"/>
+          <path fill="#d3b372" d="m15 35-7.72-4.116A13.73 13.73 0 0 1 0 18.75V2.5A2.5 2.5 0 0 1 2.5 0h25A2.5 2.5 0 0 1 30 2.5v16.25a13.73 13.73 0 0 1-7.28 12.134zM2.5 2.5v16.25a11.24 11.24 0 0 0 5.958 9.927L15 32.167l6.543-3.488A11.24 11.24 0 0 0 27.5 18.75V2.5z"/>
+        </symbol>
+        <symbol id="energy" fill="none" viewBox="0 0 27 40">
+          <path fill="#d3b372" d="m16.42 2.5-2.821 14.82 10.218.034-13.909 20.09 2.82-16.304-10.217-.036zM16.42 0q-.1 0-.2.008c-.442.035-.735.183-1.081.416a2.5 2.5 0 0 0-.652.634L.48 19.597a2.49 2.49 0 0 0-.21 2.595 2.51 2.51 0 0 0 2.223 1.373l7.217.053-2.27 13.366a2.5 2.5 0 0 0 1.476 2.755c.313.135.65.204.992.204.785 0 1.43-.367 1.915-1.031l14.026-20.09c.553-.758.634-1.76.21-2.595a2.51 2.51 0 0 0-2.224-1.373l-7.216-.013 2.244-11.753q.072-.29.072-.588A2.503 2.503 0 0 0 16.422 0"/>
+        </symbol>
+        <symbol id="x" fill="none" viewBox="0 0 22 22">
+          <path stroke="#9c814a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 1 1 21M1 1l20 20"/>
+        </symbol>
+        <symbol id="telegram" fill="none" viewBox="0 0 40 40">
+          <title>Telegram</title>
+          <path fill="currentColor" fill-rule="evenodd" d="M28.409 14.895a2.45 2.45 0 0 0-3.359-2.645L10.88 18.108c-1.797.744-1.534 3.367.376 3.737l2.652.513a3.04 3.04 0 0 0 2.14-.376l.773-.462a1.967 1.967 0 0 0 .709 2.55l6.083 3.813a1.96 1.96 0 0 0 2.978-1.36zm-9.84 7.517 5.05-4.842c.9-.862-.19-2.288-1.259-1.65l-7.32 4.382a1.08 1.08 0 0 1-.76.133l-2.651-.513 14.17-5.859a.49.49 0 0 1 .671.529l-1.816 11.631z" clip-rule="evenodd"/>
+          <path fill="currentColor" fill-rule="evenodd" d="M20 3.333C10.795 3.333 3.334 10.795 3.334 20S10.795 36.667 20 36.667 36.667 29.205 36.667 20 29.205 3.333 20 3.333M5.294 20a14.707 14.707 0 1 1 29.413 0 14.707 14.707 0 0 1-29.413 0" clip-rule="evenodd"/>
+        </symbol>
+        <symbol id="instagram" fill="none" viewBox="0 0 40 40">
+          <title>Instagram</title>
+          <path fill="currentColor" d="M30.728 34.895H9.272a4.167 4.167 0 0 1-4.167-4.167V9.272a4.167 4.167 0 0 1 4.167-4.167h21.456a4.167 4.167 0 0 1 4.167 4.167v21.456a4.167 4.167 0 0 1-4.167 4.167M9.272 6.772a2.5 2.5 0 0 0-2.5 2.5v21.456a2.5 2.5 0 0 0 2.5 2.5h21.456a2.5 2.5 0 0 0 2.5-2.5V9.272a2.5 2.5 0 0 0-2.5-2.5z"/>
+          <path fill="currentColor" d="M20 27.657A7.658 7.658 0 1 1 27.667 20 7.667 7.667 0 0 1 20 27.657M20 14a5.992 5.992 0 1 0 6 6 6 6 0 0 0-6-6M28.667 13.175a1.792 1.792 0 1 0 0-3.583 1.792 1.792 0 0 0 0 3.583"/>
+        </symbol>
+        <symbol id="whatsapp" fill="none" viewBox="0 0 40 40">
+          <title>WhatsApp</title>
+          <path fill="currentColor" d="M14.81 11.95c.305.008.643.025.965.738.213.475.572 1.35.865 2.064.228.555.415 1.011.462 1.105.106.213.173.458.033.746l-.047.097a2.3 2.3 0 0 1-.383.617l-.238.283a7 7 0 0 1-.404.463c-.215.214-.436.444-.19.87.247.427 1.114 1.83 2.392 2.962.935.843 2.008 1.52 3.172 2q.174.075.283.127c.428.213.683.18.93-.107.248-.288 1.072-1.248 1.362-1.675.28-.427.566-.36.963-.213.397.148 2.507 1.183 2.935 1.395l.238.116c.299.142.5.24.587.384.107.181.107 1.033-.247 2.036-.363 1-2.111 1.96-2.903 2.034l-.225.026c-.727.087-1.647.2-4.927-1.091-4.043-1.59-6.711-5.534-7.25-6.332l-.088-.127-.01-.013c-.245-.328-1.747-2.337-1.747-4.41 0-1.983.979-3.017 1.424-3.487l.078-.083a1.58 1.58 0 0 1 1.145-.533c.288 0 .578 0 .825.008"/>
+          <path fill="currentColor" fill-rule="evenodd" d="M3.64 35.552a.666.666 0 0 0 .811.823l7.679-2.007a16.67 16.67 0 0 0 7.933 2.012h.007c9.143 0 16.597-7.41 16.597-16.52A16.38 16.38 0 0 0 31.81 8.175a16.53 16.53 0 0 0-11.74-4.842c-9.143 0-16.597 7.41-16.597 16.519 0 2.898.763 5.745 2.217 8.256zm4.461-6.78a2.5 2.5 0 0 0-.246-1.917 14 14 0 0 1-1.882-7.003c0-7.717 6.322-14.019 14.097-14.019 3.783 0 7.313 1.462 9.977 4.114a13.88 13.88 0 0 1 4.12 9.913c0 7.717-6.322 14.02-14.097 14.02h-.009a14.17 14.17 0 0 1-6.74-1.71 2.5 2.5 0 0 0-1.823-.22l-4.603 1.202z" clip-rule="evenodd"/>
+        </symbol>
+      </svg>
+    </div>
+
+    <main>
+      <h1 class="sr-only">
+        Lumo - бренд современных биодобавок
+      </h1>
+
+      <div class="relative z-10 flex flex-col h-[calc(640px+60*((100vw-320px)/105))] bg-[#0e0d0d] min-[425px]:h-[calc(700px+180*((100vw-425px)/215))] sm:h-auto lg:bg-[#010101]">
+        <div class="flex flex-col w-[90vw] mx-auto pb-[calc(24px+8*((100vw-320px)/105))] grow min-[640px]:pb-10">
+          <header class="flex items-center justify-between pt-6 pb-4 sm:py-8 lg:pt-[min(calc(32px+16*((100vw-1024px)/896)),48px)] lg:pb-[min(calc(32px+32*((100vw-1024px)/896)),64px)]">
+            <img class="flex w-[70px] h-auto sm:w-[96px] lg:h-10 lg:hidden" src="/images/logo.svg" width="70" height="20" alt="Lumo">
+            
+            <nav class="fixed left-0 top-0 z-20 flex flex-col bg-[#030204] w-full h-full text-[#A9A9A9] text-[18px] opacity-0 invisible group-[.menu-open]:opacity-100 group-[.menu-open]:visible duration-300 lg:opacity-100 lg:visible lg:static lg:bg-transparent lg:w-auto lg:h-auto lg:flex-row lg:grow lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-center">
+              <div class="flex items-center justify-between pt-6 pb-4 px-[5vw] sm:py-8 lg:p-0">
+                <img class="flex w-[70px] h-auto sm:w-[96px]" src="/images/logo.svg" width="70" height="20" alt="Lumo">
+
+                <button class="flex justify-center items-center w-10 h-10 -mr-[6.5px] lg:hidden" type="button" onclick="document.body.classList.remove('menu-open')">
+                  <svg width="20" height="20">
+                    <use href="#x"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <ul class="flex flex-col py-10 lg:flex-row lg:py-0 lg:gap-10">
+                <li class="flex">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                    Каталог
+                  </a>
+                </li>
+                <li class="flex">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                    О бренде
+                  </a>
+                </li>
+                <li class="flex">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="flex">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+      
+              <ul class="flex items-center justify-between px-[5vw] mt-auto pb-8 text-[#A9A9A9] lg:p-0 lg:text-[#E7E7E7] lg:justify-end lg:gap-6">
+                <li>
+                  <a class="flex duration-300 hover:text-[#E7E7E7] lg:hover:text-[#A9A9A9]" href="" target="_blank">
+                    <svg class="lg:w-9 lg:h-9" width="40" height="40">
+                      <use href="#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="flex duration-300 hover:text-[#E7E7E7] lg:hover:text-[#A9A9A9]" href="" target="_blank">
+                    <svg class="lg:w-9 lg:h-9" width="40" height="40">
+                      <use href="#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="lg:hidden">
+                  <a class="flex duration-300 hover:text-[#E7E7E7] lg:hover:text-[#A9A9A9]" href="" target="_blank">
+                    <svg width="40" height="40">
+                      <use href="#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+    
+            <button class="flex justify-center items-center w-10 h-10 -mr-[6.5px] lg:hidden" type="button" onclick="document.body.classList.add('menu-open')">
+              <svg width="27" height="18">
+                <use href="#menu"></use>
+              </svg>
+            </button>
+          </header>
+  
+          <p class="text-[32px] leading-[1.1] mb-5 text-[#E7E7E7] sm:text-[40px] sm:leading-[1.2] sm:mb-6 lg:text-[min(calc(44px+24*((100vw-1024px)/896)),68px)] lg:mb-[min(calc(32px+24*((100vw-1024px)/896)),56px)]">
+            <strong class="font-normal">
+              Ничего лишнего. <br> Только чистая формула.
+            </strong>
+          </p>
+  
+          <p class="text-[#A6A6A6] sm:text-[18px] sm:max-w-[480px] sm:mb-14 lg:text-[min(calc(18px+6*((100vw-1024px)/896)),24px)] lg:max-w-none lg:whitespace-pre-line lg:mb-[min(calc(56px+24*((100vw-1024px)/896)),80px)]">Современные добавки с тщательно 
+            подобранным составом для энергии, баланса и
+            ежедневной поддержки организма.</p>
+
+          <ul class="hidden sm:flex gap-4 mb-16 justify-around lg:justify-start lg:mb-[min(calc(64px+24*((100vw-1024px)/896)),88px)] lg:gap-[min(calc(80*((100vw-1024px)/896)),80px)]">
+            <li class="flex flex-col gap-2 items-center text-center max-w-[220px] lg:w-max">
+              <svg width="43" height="39">
+                <use href="#leaf"></use>
+              </svg>
+              <h3 class="text-[#C8C8C8] uppercase">
+                Чистый состав
+              </h3>
+              <p class="text-[#A6A6A6] whitespace-pre-line">Без лишних добавок и
+                наполнителей</p>
+            </li>
+            <li class="flex flex-col gap-2 items-center text-center max-w-[220px]">
+              <svg width="30" height="35">
+                <use href="#security"></use>
+              </svg>
+              <h3 class="text-[#C8C8C8] uppercase lg:whitespace-pre-line">Качество и
+                безопасность</h3>
+              <p class="text-[#A6A6A6] whitespace-pre-line">Только проверенные
+                ингердиенты</p>
+            </li>
+            <li class="flex flex-col gap-2 items-center text-center max-w-[220px]">
+              <svg width="27" height="40">
+                <use href="#energy"></use>
+              </svg>
+              <h3 class="text-[#C8C8C8] uppercase">
+                Энергия и баланс
+              </h3>
+              <p class="text-[#A6A6A6] whitespace-pre-line">Поддержка организма
+                на каждый день</p>
+            </li>
+          </ul>
+
+          <a class="flex items-center justify-center bg-[#D3B372] min-h-11 text-[#14141A] text-[14px] mt-auto px-5 font-medium duration-300 hover:bg-[#D3B372]/90 active:translate-y-1 sm:text-[16px] sm:w-max lg:h-12" href="#catalog">
+            Посмотреть все
+          </a>
+        </div>
+  
+        <picture>
+          <source srcset="/images/hero-desktop.webp" media="(min-width: 1024px)">
+          <source srcset="/images/hero-tablet.webp" media="(min-width: 640px)">
+          <img class="absolute right-0 bottom-0 -z-10 block w-full h-auto object-cover lg:h-full lg:w-auto" src="/images/hero.webp" alt="Lumo, Ежовик гребенчатый">
+        </picture>
+      </div>
+    </main>
+  </body>
+</html>
