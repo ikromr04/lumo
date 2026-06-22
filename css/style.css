@@ -17,4 +17,12 @@
 html {
   font-family: 'Satoshi', sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body.show-product-1,
+body.show-product-2,
+body.show-product-3,
+body.show-product-4 {
+  overflow: hidden;
 }

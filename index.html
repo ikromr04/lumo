@@ -6,8 +6,10 @@
     
     <title>Lumo</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="/css/style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
@@ -29,7 +31,7 @@
           <path fill="#d3b372" d="m16.42 2.5-2.821 14.82 10.218.034-13.909 20.09 2.82-16.304-10.217-.036zM16.42 0q-.1 0-.2.008c-.442.035-.735.183-1.081.416a2.5 2.5 0 0 0-.652.634L.48 19.597a2.49 2.49 0 0 0-.21 2.595 2.51 2.51 0 0 0 2.223 1.373l7.217.053-2.27 13.366a2.5 2.5 0 0 0 1.476 2.755c.313.135.65.204.992.204.785 0 1.43-.367 1.915-1.031l14.026-20.09c.553-.758.634-1.76.21-2.595a2.51 2.51 0 0 0-2.224-1.373l-7.216-.013 2.244-11.753q.072-.29.072-.588A2.503 2.503 0 0 0 16.422 0"/>
         </symbol>
         <symbol id="x" fill="none" viewBox="0 0 22 22">
-          <path stroke="#9c814a" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 1 1 21M1 1l20 20"/>
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 1 1 21M1 1l20 20"/>
         </symbol>
         <symbol id="telegram" fill="none" viewBox="0 0 40 40">
           <title>Telegram</title>
@@ -46,16 +48,20 @@
           <path fill="currentColor" d="M14.81 11.95c.305.008.643.025.965.738.213.475.572 1.35.865 2.064.228.555.415 1.011.462 1.105.106.213.173.458.033.746l-.047.097a2.3 2.3 0 0 1-.383.617l-.238.283a7 7 0 0 1-.404.463c-.215.214-.436.444-.19.87.247.427 1.114 1.83 2.392 2.962.935.843 2.008 1.52 3.172 2q.174.075.283.127c.428.213.683.18.93-.107.248-.288 1.072-1.248 1.362-1.675.28-.427.566-.36.963-.213.397.148 2.507 1.183 2.935 1.395l.238.116c.299.142.5.24.587.384.107.181.107 1.033-.247 2.036-.363 1-2.111 1.96-2.903 2.034l-.225.026c-.727.087-1.647.2-4.927-1.091-4.043-1.59-6.711-5.534-7.25-6.332l-.088-.127-.01-.013c-.245-.328-1.747-2.337-1.747-4.41 0-1.983.979-3.017 1.424-3.487l.078-.083a1.58 1.58 0 0 1 1.145-.533c.288 0 .578 0 .825.008"/>
           <path fill="currentColor" fill-rule="evenodd" d="M3.64 35.552a.666.666 0 0 0 .811.823l7.679-2.007a16.67 16.67 0 0 0 7.933 2.012h.007c9.143 0 16.597-7.41 16.597-16.52A16.38 16.38 0 0 0 31.81 8.175a16.53 16.53 0 0 0-11.74-4.842c-9.143 0-16.597 7.41-16.597 16.519 0 2.898.763 5.745 2.217 8.256zm4.461-6.78a2.5 2.5 0 0 0-.246-1.917 14 14 0 0 1-1.882-7.003c0-7.717 6.322-14.019 14.097-14.019 3.783 0 7.313 1.462 9.977 4.114a13.88 13.88 0 0 1 4.12 9.913c0 7.717-6.322 14.02-14.097 14.02h-.009a14.17 14.17 0 0 1-6.74-1.71 2.5 2.5 0 0 0-1.823-.22l-4.603 1.202z" clip-rule="evenodd"/>
         </symbol>
+        <symbol id="next" fill="none" viewBox="0 0 30 29">
+          <title>Следующий</title>
+          <path fill="currentColor" d="M17.147 28.504a.8.8 0 0 1-.142-.245.86.86 0 0 1 0-.58.8.8 0 0 1 .142-.244l10.625-12.316H.652a.61.61 0 0 1-.461-.222.82.82 0 0 1-.191-.534c0-.2.069-.393.191-.535a.61.61 0 0 1 .461-.221h27.12L17.147 1.29a.8.8 0 0 1-.141-.245.86.86 0 0 1 0-.58.8.8 0 0 1 .141-.244.7.7 0 0 1 .212-.164.58.58 0 0 1 .5 0q.118.057.21.164l11.74 13.606q.09.107.141.245a.86.86 0 0 1 0 .58.8.8 0 0 1-.141.245l-11.74 13.606a.7.7 0 0 1-.21.164.57.57 0 0 1-.5 0 .7.7 0 0 1-.212-.164"/>
+        </symbol>
       </svg>
     </div>
 
-    <main>
+    <main id="home">
       <h1 class="sr-only">
         Lumo - бренд современных биодобавок
       </h1>
 
       <div class="relative z-10 flex flex-col h-[calc(640px+60*((100vw-320px)/105))] bg-[#0e0d0d] min-[425px]:h-[calc(700px+180*((100vw-425px)/215))] sm:h-auto lg:bg-[#010101]">
-        <div class="flex flex-col w-[90vw] mx-auto pb-[calc(24px+8*((100vw-320px)/105))] grow min-[640px]:pb-10">
+        <div class="flex flex-col w-[90vw] max-w-[1728px] mx-auto pb-[calc(24px+8*((100vw-320px)/105))] grow min-[640px]:pb-10">
           <header class="flex items-center justify-between pt-6 pb-4 sm:py-8 lg:pt-[min(calc(32px+16*((100vw-1024px)/896)),48px)] lg:pb-[min(calc(32px+32*((100vw-1024px)/896)),64px)]">
             <img class="flex w-[70px] h-auto sm:w-[96px] lg:h-10 lg:hidden" src="/images/logo.svg" width="70" height="20" alt="Lumo">
             
@@ -63,7 +69,7 @@
               <div class="flex items-center justify-between pt-6 pb-4 px-[5vw] sm:py-8 lg:p-0">
                 <img class="flex w-[70px] h-auto sm:w-[96px]" src="/images/logo.svg" width="70" height="20" alt="Lumo">
 
-                <button class="flex justify-center items-center w-10 h-10 -mr-[6.5px] lg:hidden" type="button" onclick="document.body.classList.remove('menu-open')">
+                <button class="flex justify-center text-[#9c814a] items-center w-10 h-10 -mr-[6.5px] lg:hidden" type="button" onclick="document.body.classList.remove('menu-open')">
                   <svg width="20" height="20">
                     <use href="#x"></use>
                   </svg>
@@ -72,22 +78,22 @@
 
               <ul class="flex flex-col py-10 lg:flex-row lg:py-0 lg:gap-10">
                 <li class="flex">
-                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="#catalog" onclick="document.body.classList.remove('menu-open')">
                     Каталог
                   </a>
                 </li>
                 <li class="flex">
-                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="#brand" onclick="document.body.classList.remove('menu-open')">
                     О бренде
                   </a>
                 </li>
                 <li class="flex">
-                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="#reviews" onclick="document.body.classList.remove('menu-open')">
                     Отзывы
                   </a>
                 </li>
                 <li class="flex">
-                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="">
+                  <a class="flex items-center grow h-12 px-[5vw] duration-300 active:bg-gray-100/20 hover:text-[#E7E7E7] lg:h-10 lg:px-3 lg:text-[16px]" href="#contacts" onclick="document.body.classList.remove('menu-open')">
                     Контакты
                   </a>
                 </li>
@@ -178,6 +184,680 @@
           <img class="absolute right-0 bottom-0 -z-10 block w-full h-auto object-cover lg:h-full lg:w-auto" src="/images/hero.webp" alt="Lumo, Ежовик гребенчатый">
         </picture>
       </div>
+
+      <section class="flex flex-col bg-[#030204] text-[#A9A9A9] pt-6 pb-10 sm:bg-[#141418] md:pt-10 md:pb-20 lg:pt-[min(calc(40px+40*((100vw-1024px)/896)),80px)] lg:pb-[min(calc(80px+80*((100vw-1024px)/896)),160px)]" id="brand">
+        <div class="w-[90vw] max-w-[1728px] mx-auto">
+          <h2 class="text-[14px] mb-7 sm:text-[16px] lg:text-[min(calc(16px+6*((100vw-1024px)/896)),22px)] md:mb-9 lg:mb-[min(calc(36px+36*((100vw-1024px)/896)),64px)]">
+            О бренде
+          </h2>
+          
+          <div class="md:flex md:flex-row-reverse md:gap-8 md:items-center lg:gap-[min(calc(32px+32*((100vw-1024px)/896)),64px)]">
+            <p class="mb-10 sm:text-[18px] lg:text-[min(calc(18px+6*((100vw-1024px)/896)),24px)] md:mb-0">
+              <strong class="text-[#B29354] font-normal">LUMO</strong> — бренд современных биодобавок для концентрации, энергии и восстановления. Мы создаём чистые формулы без лишнего — сочетая функциональные грибы, экстракты и современные wellness-подходы. Никакого визуального шума. Никаких случайных ингредиентов. Только продукты, которые становятся частью ежедневного ритуала.
+            </p>
+            
+            <picture>
+              <source srcset="/images/brand-desktop.webp" media="(min-width: 1024px)">
+              <img class="flex w-full h-auto sm:min-w-[340px] lg:min-w-[min(calc(340px+360*((100vw-1024px)/896)),700px)]" src="/images/brand.webp" alt="Lumo, Бренды">
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="flex flex-col bg-[#050607] text-[#A9A9A9] pt-6 pb-10 md:pt-10 md:pb-20 lg:pt-[min(calc(40px+40*((100vw-1024px)/896)),80px)] lg:pb-[min(calc(80px+80*((100vw-1024px)/896)),160px)]" id="catalog">
+        <div class="w-[90vw] max-w-[1728px] mx-auto">
+          <h2 class="text-[14px] mb-7 sm:text-[16px] lg:text-[min(calc(16px+6*((100vw-1024px)/896)),22px)] md:mb-9 lg:mb-0 lg:h-0">
+            Каталог
+          </h2>
+          
+          <p class="text-[32px] leading-[1.1] mb-5 text-[#E7E7E7] uppercase sm:text-[40px] sm:leading-[1.2] sm:mb-6 lg:text-[min(calc(44px+24*((100vw-1024px)/896)),68px)] lg:mb-[min(calc(32px+24*((100vw-1024px)/896)),56px)] lg:text-center lg:whitespace-pre-line"><strong class="font-normal"><span class="text-[#B29354]">LUMO</span> — Бренд современных
+            биодобавок</strong></p>
+
+          <p class="mb-10 sm:text-[18px] lg:text-[min(calc(18px+6*((100vw-1024px)/896)),24px)] lg:whitespace-pre-line lg:text-center lg:mb-[min(calc(40px+40*((100vw-1024px)/896)),80px)]">Формулы без лишнего, созданные для ежедневного
+            баланса, энергии и поддержки организма.</p>
+          
+          <div class="swiper products">
+            <div class="swiper-wrapper mb-7 lg:[all:revert] lg:!flex lg:!gap-[min(calc(16px+24*((100vw-1024px)/896)),40px)]">
+              <div class="swiper-slide lg:[all:revert]">
+                <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                  <img class="flex aspect-[370/350] w-full" src="/images/product-1.png" alt="Патчи LUMO, Nicotin-free, 20шт">
+                  <div class="text-[20px] font-light mb-2">
+                    <h2 class="line-clamp-1">Патчи LUMO, Nicotin-free, 20шт</h2>
+                    <p>12.900 ₸</p>
+                  </div>
+                  <a class="flex items-center justify-center text-[#E7E7E7] min-h-11 border border-[#A9A9A9] duration-300 hover:text-white hover:border-white lg:h-12" href="#product-1" onclick="document.body.classList.add('show-product-1')">
+                    Подробнее
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide lg:[all:revert]">
+                <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                  <img class="flex aspect-[370/350] w-full" src="/images/product-2.png" alt="Капсулы LUMO, Mushroom, 60 шт">
+                  <div class="text-[20px] font-light mb-2">
+                    <h2 class="line-clamp-1">Капсулы LUMO, Mushroom, 60 шт</h2>
+                    <p>9.900 ₸</p>
+                  </div>
+                  <a class="flex items-center justify-center text-[#E7E7E7] min-h-11 border border-[#A9A9A9] duration-300 hover:text-white hover:border-white lg:h-12" href="#product-2" onclick="document.body.classList.add('show-product-2')">
+                    Подробнее
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide lg:[all:revert]">
+                <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                  <img class="flex aspect-[370/350] w-full" src="/images/product-3.png" alt="LUMO, Mushroom extract, 20 мл">
+                  <div class="text-[20px] font-light mb-2">
+                    <h2 class="line-clamp-1">LUMO, Mushroom extract, 20 мл</h2>
+                    <p>37.500 ₸</p>
+                  </div>
+                  <a class="flex items-center justify-center text-[#E7E7E7] min-h-11 border border-[#A9A9A9] duration-300 hover:text-white hover:border-white lg:h-12" href="#product-3" onclick="document.body.classList.add('show-product-3')">
+                    Подробнее
+                  </a>
+                </article>
+              </div>
+              <div class="swiper-slide lg:[all:revert]">
+                <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                  <img class="flex aspect-[370/350] w-full" src="/images/product-4.png" alt="LUMO, Cordyceps extract, 20 мл">
+                  <div class="text-[20px] font-light mb-2">
+                    <h2 class="line-clamp-1">LUMO, Cordyceps extract, 20 мл</h2>
+                    <p>37.500 ₸</p>
+                  </div>
+                  <a class="flex items-center justify-center text-[#E7E7E7] min-h-11 border border-[#A9A9A9] duration-300 hover:text-white hover:border-white lg:h-12" href="#product-4" onclick="document.body.classList.add('show-product-4')">
+                    Подробнее
+                  </a>
+                </article>
+              </div>
+            </div>
+
+            <div class="flex justify-end lg:hidden">
+              <button class="swiper-button-next-product duration-300 text-[#a9a9a9] hover:text-white" type="button">
+                <svg width="30" height="30">
+                  <use href="#next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <section class="pt-6 md:pt-10 lg:pt-[min(calc(40px+40*((100vw-1024px)/896)),80px)]">
+            <h3 class="text-[#B29354] text-[18px] mb-7 sm:text-[20px] lg:text-[min(calc(20px+4*((100vw-1024px)/896)),24px)] md:mb-9 lg:mb-[min(calc(36px+36*((100vw-1024px)/896)),64px)]">
+              Курсы
+            </h3>
+
+            <div class="swiper courses">
+              <div class="swiper-wrapper mb-7 lg:[all:revert] lg:!grid lg:!grid-cols-4 lg:!gap-[min(calc(16px+24*((100vw-1024px)/896)),40px)]">
+                <div class="swiper-slide lg:![all:revert]">
+                  <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                    <img class="flex aspect-[370/350] w-full" src="/images/course-1.png" alt="LUMO COMBO 1">
+                    <div class="text-[20px] font-light mb-2">
+                      <h2>LUMO COMBO 1</h2>
+                      <p>43.900 ₸</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide lg:![all:revert]">
+                  <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                    <img class="flex aspect-[370/350] w-full" src="/images/course-2.png" alt="АНТИ-НИКОТИН+">
+                    <div class="text-[20px] font-light mb-2">
+                      <h2>АНТИ-НИКОТИН+</h2>
+                      <p>69.900 ₸</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide lg:![all:revert]">
+                  <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                    <img class="flex aspect-[370/350] w-full" src="/images/course-3.png" alt="LUMO COMBO 2">
+                    <div class="text-[20px] font-light mb-2">
+                      <h2>LUMO COMBO 2</h2>
+                      <p>54.900 ₸</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide lg:![all:revert]">
+                  <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                    <img class="flex aspect-[370/350] w-full" src="/images/course-4.png" alt="LUMO COMBO 3">
+                    <div class="text-[20px] font-light mb-2">
+                      <h2>LUMO COMBO 3</h2>
+                      <p>69.000 ₸</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide lg:![all:revert]">
+                  <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                    <img class="flex aspect-[370/350] w-full" src="/images/course-5.png" alt="LUMO COMBO 4">
+                    <div class="text-[20px] font-light mb-2">
+                      <h2>LUMO COMBO 4</h2>
+                      <p>75.900 ₸</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide lg:![all:revert]">
+                  <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                    <img class="flex aspect-[370/350] w-full" src="/images/course-6.png" alt="LUMO COMBO 5">
+                    <div class="text-[20px] font-light mb-2">
+                      <h2>LUMO COMBO 5</h2>
+                      <p>49.900 ₸</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="swiper-slide lg:![all:revert]">
+                  <article class="flex flex-col gap-2 text-[#E7E7E7] group">
+                    <img class="flex aspect-[370/350] w-full" src="/images/course-7.png" alt="LUMO COMBO 6">
+                    <div class="text-[20px] font-light mb-2">
+                      <h2>LUMO COMBO 6</h2>
+                      <p>159.000 ₸</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <div class="flex justify-end">
+                <button class="swiper-button-next-course duration-300 text-[#a9a9a9] hover:text-white" type="button">
+                  <svg width="30" height="30">
+                    <use href="#next"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="flex flex-col bg-[#14151A] text-[#A9A9A9] pt-6 pb-10 md:pt-10 md:pb-20 lg:pt-[min(calc(40px+40*((100vw-1024px)/896)),80px)] lg:pb-[min(calc(80px+80*((100vw-1024px)/896)),160px)]" id="reviews">
+        <div class="w-[90vw] max-w-[1728px] mx-auto">
+          <h2 class="text-[14px] mb-7 sm:text-[16px] lg:text-[min(calc(16px+6*((100vw-1024px)/896)),22px)] md:mb-9 lg:mb-0 lg:h-0">
+            Отзывы
+          </h2>
+          
+          <p class="text-[32px] leading-[1.1] mb-5 text-[#E7E7E7] sm:text-[40px] sm:leading-[1.2] sm:mb-6 lg:text-[min(calc(44px+24*((100vw-1024px)/896)),68px)] lg:mb-[min(calc(32px+24*((100vw-1024px)/896)),56px)] lg:text-center">
+            Почему выбирают LUMO
+          </p>
+
+          <p class="mb-10 sm:text-[18px] lg:text-[min(calc(18px+6*((100vw-1024px)/896)),24px)] lg:text-center lg:mb-[min(calc(40px+40*((100vw-1024px)/896)),80px)]">
+            Опыт людей, для которых качество стало привычкой.
+          </p>
+          
+          <div class="swiper reviews">
+            <div class="swiper-wrapper mb-7">
+              <div class="swiper-slide flex h-auto">
+                <article class="flex flex-col gap-5 text-[#E7E7E7] group border border-[#A9A9A9] p-4 h-auto">
+                  <div class="flex items-start gap-5">
+                    <div>
+                      <img class="flex aspect-square w-20 bg-gray-500 rounded-full" src="/images/reviewer-1.png" alt="Айгерим Сейткали">
+                    </div>
+                    <div>
+                      <h3 class="text-white text-[17px]">Айгерим Сейткали</h3>
+                      <p class="text-[#A9A9A9] text-[14px]">Нутрициолог, Алматы</p>
+                    </div>
+                  </div>
+                  <p class="text-[#A9A9A9]">«Ежовик гребенчатый от LUMO стал обязательной частью моих рекомендаций клиентам. Сама принимаю уже 2 месяца, концентрация заметно выросла, утренний туман в голове исчез. Качество экстракта чувствуется сразу.»</p>
+                </article>
+              </div>
+              <div class="swiper-slide flex h-auto">
+                <article class="flex flex-col gap-5 text-[#E7E7E7] group border border-[#A9A9A9] p-4 h-auto">
+                  <div class="flex items-start gap-5">
+                    <div>
+                      <img class="flex aspect-square w-20 bg-gray-500 rounded-full" src="/images/reviewer-2.png" alt="Данияр Ахметов">
+                    </div>
+                    <div>
+                      <h3 class="text-white text-[17px]">Данияр Ахметов</h3>
+                      <p class="text-[#A9A9A9] text-[14px]">Предприниматель, Астана</p>
+                    </div>
+                  </div>
+                  <p class="text-[#A9A9A9]">«Честно, долго сомневался, казалось, что всё это маркетинг. Но после первого курса LUMO реально удивился: стал спокойнее реагировать на стресс, переговоры идут чётче, голова не "плывёт" к вечеру. Теперь это часть моей ежедневной рутины.»</p>
+                </article>
+              </div>
+              <div class="swiper-slide flex h-auto">
+                <article class="flex flex-col gap-5 text-[#E7E7E7] group border border-[#A9A9A9] p-4 h-auto">
+                  <div class="flex items-start gap-5">
+                    <div>
+                      <img class="flex aspect-square w-20 bg-gray-500 rounded-full" src="/images/reviewer-3.png" alt="Сабина Нурланова">
+                    </div>
+                    <div>
+                      <h3 class="text-white text-[17px]">Сабина Нурланова</h3>
+                      <p class="text-[#A9A9A9] text-[14px]">Преподаватель, Шымкент</p>
+                    </div>
+                  </div>
+                  <p class="text-[#A9A9A9]">«Преподаю на двух кафедрах, плюс дети дома — нагрузка колоссальная. LUMO помог выровнять состояние: тревожность снизилась, сон стал глубже, а память — острее. Очень ценю, что состав честный и без лишней химии.»</p>
+                </article>
+              </div>
+              <div class="swiper-slide flex h-auto">
+                <article class="flex flex-col gap-5 text-[#E7E7E7] group border border-[#A9A9A9] p-4 h-auto">
+                  <div class="flex items-start gap-5">
+                    <div>
+                      <img class="flex aspect-square w-20 bg-gray-500 rounded-full" src="/images/reviewer-4.png" alt="Марат Джаксыбеков">
+                    </div>
+                    <div>
+                      <h3 class="text-white text-[17px]">Марат Джаксыбеков</h3>
+                      <p class="text-[#A9A9A9] text-[14px]">Врач-терапевт, Караганда</p>
+                    </div>
+                  </div>
+                  <p class="text-[#A9A9A9]">«Как врач всегда подхожу к добавкам с осторожностью, но состав LUMO меня убедил,всё прозрачно, дозировки рабочие. Сам принимаю экстракт уже 3 месяца: стал спокойнее, сон улучшился, пациенты говорят, что выгляжу лучше. Теперь рекомендую коллегам.»</p>
+                </article>
+              </div>
+              <div class="swiper-slide flex h-auto">
+                <article class="flex flex-col gap-5 text-[#E7E7E7] group border border-[#A9A9A9] p-4 h-auto">
+                  <div class="flex items-start gap-5">
+                    <div>
+                      <img class="flex aspect-square w-20 bg-gray-500 rounded-full" src="/images/reviewer-5.png" alt="Диана Серикова">
+                    </div>
+                    <div>
+                      <h3 class="text-white text-[17px]">Диана Серикова</h3>
+                      <p class="text-[#A9A9A9] text-[14px]">Маркетолог, Алматы</p>
+                    </div>
+                  </div>
+                  <p class="text-[#A9A9A9]">«Работа в агентстве — это постоянные дедлайны и многозадачность. После первого месяца LUMO заметила, что перестала "зависать" между задачами, голова стала чище, а вечером не такое ощущение выжатого лимона.»</p>
+                </article>
+              </div>
+              <div class="swiper-slide flex h-auto">
+                <article class="flex flex-col gap-5 text-[#E7E7E7] group border border-[#A9A9A9] p-4 h-auto">
+                  <div class="flex items-start gap-5">
+                    <div>
+                      <img class="flex aspect-square w-20 bg-gray-500 rounded-full" src="/images/reviewer-6.png" alt="Тимур Бейсенов">
+                    </div>
+                    <div>
+                      <h3 class="text-white text-[17px]">Тимур Бейсенов</h3>
+                      <p class="text-[#A9A9A9] text-[14px]">IT-предприниматель, Астана</p>
+                    </div>
+                  </div>
+                  <p class="text-[#A9A9A9]">«Перепробовал разные ноотропы, большинство либо не работают, либо дают эффект только пока пьёшь. С LUMO по-другому: через месяц заметил, что стал системнее мыслить, меньше откладываю задачи, тревожный фон снизился. Продолжаю второй курс.»</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="flex justify-end">
+              <button class="swiper-button-next-review duration-300 text-[#a9a9a9] hover:text-white" type="button">
+                <svg width="30" height="30">
+                  <use href="#next"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative z-10 overflow-hidden flex flex-col bg-[#010101] text-[#A9A9A9] h-[calc(600px+120*((100vw-320px)/105))] min-[425px]:h-[calc(720px+200*((100vw-425px)/215))] pt-6 pb-10 sm:h-auto md:pt-10 md:pb-20 lg:pt-[min(calc(40px+40*((100vw-1024px)/896)),80px)] lg:pb-[min(calc(80px+80*((100vw-1024px)/896)),160px)]" id="contacts">
+        <div class="flex flex-col w-[90vw] max-w-[1728px] mx-auto grow">
+          <h2 class="text-[14px] mb-7 sm:text-[16px] lg:text-[min(calc(16px+6*((100vw-1024px)/896)),22px)] md:mb-9 lg:mb-0 lg:h-0">
+            Контакты
+          </h2>
+          
+          <p class="text-[32px] leading-[1.1] mb-5 text-[#E7E7E7] sm:text-[40px] sm:leading-[1.2] sm:mb-6 lg:text-[min(calc(44px+24*((100vw-1024px)/896)),68px)] lg:mb-[min(calc(32px+24*((100vw-1024px)/896)),56px)] lg:text-center">
+            Не уверены, что выбрать?
+          </p>
+
+          <p class="mb-10 sm:text-[18px] lg:text-[min(calc(18px+6*((100vw-1024px)/896)),24px)] lg:text-center lg:mb-[min(calc(40px+40*((100vw-1024px)/896)),80px)]">
+            Расскажите нам — поможем подобрать <span class="text-[#B29354]">LUMO</span> под ваш ритм жизни!
+          </p>
+
+          <ul class="flex justify-between mt-auto lg:flex-col lg:gap-20 lg:py-16">
+            <li>
+              <a class="flex text-[#D3B372] duration-300 hover:opacity-80 gap-3" href="">
+                <div class="flex justify-center items-center border border-[#D3B372] w-11 h-11 md:min-w-20 md:min-h-20">
+                  <svg class="md:w-8 md:h-8" width="16" height="16">
+                    <use xlink:href="#telegram" />
+                  </svg>
+                </div>
+                <div class="text-[16px] text-[#A9A9A9] hidden md:flex flex-col justify-between">
+                  <div>Telegram</div>
+                  <div class="text-[18px] text-[#E7E7E7]">@LUMO_Energy</div>
+                  <div>Пн-Вс 9:00-21:00</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="flex text-[#D3B372] duration-300 hover:opacity-80 gap-3" href="">
+                <div class="flex justify-center items-center border border-[#D3B372] w-11 h-11 md:min-w-20 md:min-h-20">
+                  <svg class="md:w-8 md:h-8" width="16" height="16">
+                    <use xlink:href="#instagram" />
+                  </svg>
+                </div>
+                <div class="text-[16px] text-[#A9A9A9] hidden md:flex flex-col justify-between">
+                  <div>Instagram</div>
+                  <div class="text-[18px] text-[#E7E7E7]">@LUMO_Energy</div>
+                  <div>Пн-Вс 9:00-21:00</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="flex text-[#D3B372] duration-300 hover:opacity-80 gap-3" href="">
+                <div class="flex justify-center items-center border border-[#D3B372] w-11 h-11 md:min-w-20 md:min-h-20">
+                  <svg class="md:w-8 md:h-8" width="16" height="16">
+                    <use xlink:href="#whatsapp" />
+                  </svg>
+                </div>
+                <div class="text-[16px] text-[#A9A9A9] hidden md:flex flex-col justify-between">
+                  <div>WhatsApp</div>
+                  <div class="text-[18px] text-[#E7E7E7]">+7 777 148-35-76</div>
+                  <div>Пн-Вс 9:00-21:00</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+         
+        <picture>
+          <source srcset="/images/contacts-desktop.webp" media="(min-width: 1024px)">
+          <source srcset="/images/hero-tablet.webp" media="(min-width: 640px)">
+          <img class="absolute right-0 bottom-0 -z-10 block w-full h-auto object-cover lg:h-full lg:w-auto" src="/images/contacts.webp" alt="Lumo">
+        </picture>
+      </section>
+
+      <footer class="py-12">
+        <div class="relative flex flex-col w-[90vw] max-w-[1728px] mx-auto lg:grid lg:grid-cols-5 lg:gap-6">
+          <img class="flex w-[70px] h-auto mb-3 sm:w-[96px] lg:h-10 lg:order-1" src="/images/logo.svg" width="70" height="20" alt="Lumo">
+
+          <p class="text-[32px] leading-[1.1] mb-5 text-[#E7E7E7] whitespace-pre-line sm:text-[40px] sm:leading-[1.2] sm:mb-6 lg:text-[min(calc(44px+24*((100vw-1024px)/896)),68px)] lg:mb-[min(calc(32px+24*((100vw-1024px)/896)),56px)] lg:order-3 lg:col-span-3 lg:self-center">Ты заслуживаешь лучшего!
+            Попробуй <span class="text-[#B29354]">LUMO</span>!</p>
+
+          <ul class="flex flex-wrap text-[#A9A9A9] gap-x-4 gap-y-1 mb-12 lg:order-2 lg:flex-col lg:gap-8">
+            <li>
+              <a class="duration-300 hover:text-white" href="#home">
+                Главное
+              </a>
+            </li>
+            <li>
+              <a class="duration-300 hover:text-white" href="#catalog">
+                Каталог
+              </a>
+            </li>
+            <li>
+              <a class="duration-300 hover:text-white" href="#brand">
+                О бренде
+              </a>
+            </li>
+            <li>
+              <a class="duration-300 hover:text-white" href="#contacts">
+                Контакты
+              </a>
+            </li>
+            <li>
+              <a class="duration-300 hover:text-white" href="#reviews">
+                Отзывы
+              </a>
+            </li>
+          </ul>
+
+          <ul class="flex items-center justify-between text-[#A9A9A9] sm:justify-start sm:gap-10 lg:p-0 lg:text-[#E7E7E7] lg:justify-end lg:gap-6 lg:hidden">
+            <li>
+              <a class="flex duration-300 hover:text-[#E7E7E7] lg:hover:text-[#A9A9A9]" href="" target="_blank">
+                <svg class="lg:w-9 lg:h-9" width="40" height="40">
+                  <use href="#telegram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="flex duration-300 hover:text-[#E7E7E7] lg:hover:text-[#A9A9A9]" href="" target="_blank">
+                <svg class="lg:w-9 lg:h-9" width="40" height="40">
+                  <use href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="lg:hidden">
+              <a class="flex duration-300 hover:text-[#E7E7E7] lg:hover:text-[#A9A9A9]" href="" target="_blank">
+                <svg width="40" height="40">
+                  <use href="#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <p class="text-[14px] text-[#A9A9A9] mt-8 lg:absolute lg:right-0 lg:bottom-0">
+            @Все права защищены
+          </p>
+        </div>
+      </footer>
+
+      <section class="fixed right-0 top-0 z-20 bg-[#050607] text-[#A9A9A9] flex flex-col w-[90vw] h-screen overflow-auto px-[8vw] py-[6vw] duration-300 translate-x-[100%] group-[.show-product-1]:translate-x-0 shadow-lg">
+        <div class="flex flex-col gap-4 mb-4 md:flex-row-reverse md:gap-10 md:mb-8">
+          <div class="flex flex-row-reverse gap-2 md:gap-4 md:grow">
+            <button class="text-white flex justify-center items-center ml-auto w-10 h-10 -mr-[6.5px] -mt-[6.5px]" type="button" onclick="document.body.classList.remove('show-product-1')">
+              <svg width="20" height="20">
+                <use href="#x"></use>
+              </svg>
+            </button>
+
+            <div>
+              <h2 class="text-[18px] text-[#E7E7E7] mb-4">
+                Патчи LUMO, Nicotin-free, антиникотиновые патчи - LUMO без никотина,20шт
+              </h2>
+              <p class="flex items-center justify-center text-[13px] text-black bg-[#9CDE91] mb-4 w-max px-2 py-1 leading-none">
+                В наличие
+              </p>
+              <p class="text-[18px] text-[#E7E7E7] mb-4">
+                12.900 ₸
+              </p>
+            </div>
+          </div>
+
+          <img class="flex w-full h-auto object-cover md:max-w-[300px]" src="/images/product-1.png" alt="Капсулы LUMO, Mushroom, ежовик гребенчатый 60 / 120шт">
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <p>
+            <strong class="text-[#E7E7E7]">Антиникотиновые патчи</strong> — энергетические патчи без никотина для фокуса, концентрации и продуктивности. 
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Для чего:</strong> Дают чистую энергию без кофеинового краша, повышают концентрацию и ментальную выносливость. Работают постепенно — без резких скачков и тревожности. Идеальны для работы, учёбы, вождения или любой ситуации, где нужна ясная голова.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как работает:</strong> Активные вещества поступают через кожу напрямую в кровоток, минуя ЖКТ — это обеспечивает мягкое и равномерное действие на протяжении нескольких часов. Никакого сахара, никотина и лишней химии. Содержит эринацины и герециноны — редкие соединения, которые проникают в мозг и стимулируют выработку фактора роста нервов (NGF). Проще говоря: питает нейроны, укрепляет нейронные связи и буквально помогает мозгу работать лучше.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как принимать:</strong> Приклейте 1 патч на чистую сухую кожу — запястье, плечо или шею. Носите 4–8 часов. Не используйте более 1 патча в день. Лучшее время — утро или начало рабочего дня.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Противопоказания:</strong> Беременность и лактация, чувствительная кожа, индивидуальная непереносимость компонентов. При наличии хронических заболеваний — консультация с врачом.
+          </p>
+          <p class="text-[#E7E7E7]">
+            Не является лекарственным средством.
+          </p>
+        </div>
+      </section>
+
+      <section class="fixed right-0 top-0 z-20 bg-[#050607] text-[#A9A9A9] flex flex-col w-[90vw] h-screen overflow-auto px-[8vw] py-[6vw] duration-300 translate-x-[100%] group-[.show-product-2]:translate-x-0 shadow-lg">
+        <div class="flex flex-col gap-4 mb-4 md:flex-row-reverse md:gap-10 md:mb-8">
+          <div class="flex flex-row-reverse gap-2 md:gap-4 md:grow">
+            <button class="text-white flex ml-auto justify-center items-center w-10 h-10 -mr-[6.5px] -mt-[6.5px]" type="button" onclick="document.body.classList.remove('show-product-2')">
+              <svg width="20" height="20">
+                <use href="#x"></use>
+              </svg>
+            </button>
+
+            <div>
+              <h2 class="text-[18px] text-[#E7E7E7] mb-4">
+                Капсулы LUMO, Mushroom, ежовик гребенчатый 60 / 120шт  
+              </h2>
+              <p class="flex items-center justify-center text-[13px] text-black bg-[#9CDE91] mb-4 w-max px-2 py-1 leading-none">
+                В наличие
+              </p>
+              <p class="text-[18px] text-[#E7E7E7] mb-4">
+                9.900 ₸ / 19.900 ₸
+              </p>
+            </div>
+          </div>
+
+          <img class="flex w-full h-auto object-cover md:max-w-[300px]" src="/images/product-2.png" alt="Капсулы LUMO, Mushroom, ежовик гребенчатый 60 / 120шт">
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <p>
+            <strong class="text-[#E7E7E7]">Ежовик гребенчатый</strong> — функциональный гриб для ясности мышления, фокуса и устойчивости нервной системы.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Для чего:</strong> Улучшает память и концентрацию, снижает тревожность и умственную усталость, поддерживает иммунитет и пищеварение. Особенно эффективен при интенсивных нагрузках и в периоды восстановления.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как работает:</strong> Содержит эринацины и герециноны — редкие соединения, которые проникают в мозг и стимулируют выработку фактора роста нервов (NGF). Проще говоря: питает нейроны, укрепляет нейронные связи и буквально помогает мозгу работать лучше.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как принимать:</strong> Капсулы — 1–3 г в день во время еды, в первой половине дня. Курс: 1–3 месяца, затем перерыв 2–4 недели. Эффект накопительный — первые результаты заметны через 2–4 недели.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Противопоказания</strong>: Аллергия на грибы, беременность и лактация, дети до 3 лет. При приёме антикоагулянтов — консультация с врачом.
+          </p>
+          <p class="text-[#E7E7E7]">
+            БАД. Не является лекарственным средством.
+          </p>
+        </div>
+      </section>
+
+      <section class="fixed right-0 top-0 z-20 bg-[#050607] text-[#A9A9A9] flex flex-col w-[90vw] h-screen overflow-auto px-[8vw] py-[6vw] duration-300 translate-x-[100%] group-[.show-product-3]:translate-x-0 shadow-lg">
+        <div class="flex flex-col gap-4 mb-4 md:flex-row-reverse md:gap-10 md:mb-8">
+          <div class="flex flex-row-reverse gap-2 md:gap-4 md:grow">
+            <button class="text-white flex ml-auto justify-center items-center w-10 h-10 -mr-[6.5px] -mt-[6.5px]" type="button" onclick="document.body.classList.remove('show-product-3')">
+              <svg width="20" height="20">
+                <use href="#x"></use>
+              </svg>
+            </button>
+
+            <div>
+              <h2 class="text-[18px] text-[#E7E7E7] mb-4">
+                LUMO, Mushroom extract, 20 мл
+              </h2>
+              <p class="flex items-center justify-center text-[13px] text-black bg-[#9CDE91] mb-4 w-max px-2 py-1 leading-none">
+                В наличие
+              </p>
+              <p class="text-[18px] text-[#E7E7E7] mb-4">
+                37.500 ₸
+              </p>
+            </div>
+          </div>
+
+          <img class="flex w-full h-auto object-cover md:max-w-[300px]" src="/images/product-3.png" alt="Капсулы LUMO, Mushroom, ежовик гребенчатый 60 / 120шт">
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <p>
+            <strong class="text-[#E7E7E7]">Ежовик гребенчатый</strong> — функциональный гриб для ясности мышления, фокуса и устойчивости нервной системы.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Для чего:</strong> Улучшает память и концентрацию, снижает тревожность и умственную усталость, поддерживает иммунитет и пищеварение. Особенно эффективен при интенсивных нагрузках и в периоды восстановления.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как работает:</strong> Содержит эринацины и герециноны — редкие соединения, которые проникают в мозг и стимулируют выработку фактора роста нервов (NGF). Проще говоря: питает нейроны, укрепляет нейронные связи и буквально помогает мозгу работать лучше.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как принимать:</strong> Экстракт — 7–8 капель утром под язык натощак. Курс: 1–3 месяца, затем перерыв 2–4 недели. Эффект накопительный — первые результаты заметны через 2–4 недели.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Противопоказания:</strong> Аллергия на грибы, беременность и лактация, дети до 3 лет. При приёме антикоагулянтов — консультация с врачом.
+          </p>
+          <p class="text-[#E7E7E7]">
+            БАД. Не является лекарственным средством.
+          </p>
+        </div>
+      </section>
+
+      <section class="fixed right-0 top-0 z-20 bg-[#050607] text-[#A9A9A9] flex flex-col w-[90vw] h-screen overflow-auto px-[8vw] py-[6vw] duration-300 translate-x-[100%] group-[.show-product-4]:translate-x-0 shadow-lg">
+        <div class="flex flex-col gap-4 mb-4 md:flex-row-reverse md:gap-10 md:mb-8">
+          <div class="flex flex-row-reverse gap-2 md:gap-4 md:grow">
+            <button class="text-white flex ml-auto justify-center items-center w-10 h-10 -mr-[6.5px] -mt-[6.5px]" type="button" onclick="document.body.classList.remove('show-product-4')">
+              <svg width="20" height="20">
+                <use href="#x"></use>
+              </svg>
+            </button>
+
+            <div>
+              <h2 class="text-[18px] text-[#E7E7E7] mb-4">
+                LUMO, Cordyceps extract, 20 мл
+              </h2>
+              <p class="flex items-center justify-center text-[13px] text-black bg-[#9CDE91] mb-4 w-max px-2 py-1 leading-none">
+                В наличие
+              </p>
+              <p class="text-[18px] text-[#E7E7E7] mb-4">
+                37.500 ₸
+              </p>
+            </div>
+          </div>
+
+          <img class="flex w-full h-auto object-cover md:max-w-[300px]" src="/images/product-4.png" alt="Капсулы LUMO, Mushroom, ежовик гребенчатый 60 / 120шт">
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <p>
+            <strong class="text-[#E7E7E7]">Экстрат кордицепса</strong> — Премиальный экстракт гриба кордицепс для энергии, выносливости и восстановления. 
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Для чего:</strong> Повышает физическую и умственную выносливость, усиливает синтез АТФ — основного источника энергии клеток. Снижает усталость после нагрузок, поддерживает иммунитет и улучшает насыщение крови кислородом. Особенно эффективен при активном образе жизни, спорте и хроническом переутомлении. 
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как работает:</strong> Кордицепс стимулирует выработку АТФ на митохондриальном уровне — это означает больше энергии без стимуляторов и искусственного разгона. Действует мягко, системно и накопительно.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Как принимать:</strong> 7–8 капель утром натощак под язык. Удерживать 30–60 секунд, затем проглотить. Можно добавлять в кофе, чай или воду. Курс: 1–3 месяца, затем перерыв 2–4 недели.
+          </p>
+          <p>
+            <strong class="text-[#E7E7E7]">Противопоказания:</strong> Беременность и лактация, детский возраст до 3 лет, индивидуальная непереносимость. При приёме антикоагулянтов и сахароснижающих препаратов — консультация с врачом.
+          </p>
+          <p class="text-[#E7E7E7]">
+            БАД. Не является лекарственным средством.
+          </p>
+        </div>
+      </section>
     </main>
+
+    <script>
+      new Swiper('.swiper.products', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+
+        navigation: {
+          nextEl: '.swiper-button-next-product',
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            spaceBetween: 0,
+            enabled: false,
+          },
+        },
+      });
+
+      new Swiper('.swiper.courses', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+
+        navigation: {
+          nextEl: '.swiper-button-next-course',
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            enabled: false,
+          },
+        },
+      });
+
+      new Swiper('.swiper.reviews', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 16,
+
+        navigation: {
+          nextEl: '.swiper-button-next-review',
+        },
+
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
